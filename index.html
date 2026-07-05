@@ -1,0 +1,331 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Astha Singh</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300;400;500;600;700&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" />
+  <link rel="stylesheet" href="style.css" />
+  <!-- EmailJS SDK -->
+  <script src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"></script>
+</head>
+<body>
+
+<canvas id="hero-canvas"></canvas>
+
+<header id="header">
+  <div class="container">
+    <nav>
+      <div class="logo">A.S</div>
+      <ul class="nav-links" id="navLinks">
+        <li><a href="#home">Home</a></li>
+        <li><a href="#about">About</a></li>
+        <li><a href="#skills">Skills</a></li>
+        <li><a href="#projects">Projects</a></li>
+        <li><a href="#experience">Experience</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+      <button class="hamburger" id="hamburger" aria-label="Toggle menu"><i class="fas fa-bars"></i></button>
+    </nav>
+  </div>
+</header>
+
+<!-- Hero Section -->
+<section id="home">
+  <div class="container">
+    <div class="hero-inner">
+      <div>
+        <div class="hero-eyebrow"><span></span> Available for Internships & Opportunities</div>
+        <h1 class="hero-name">Hi, I'm<br><span class="gradient-text">Astha Singh</span></h1>
+        <p class="hero-role" id="typewriter"></p>
+        <p class="hero-desc">A motivated and detail-oriented commerce graduate with a Master's in Commerce (M.Com) from JNM College for Advance and Technology and a Bachelor's in Commerce (B.Com) from Swami Atulanand Hindu Mahavidyalaya. Experienced as a Credit Department Intern at HDB Financial Services, with practical knowledge of financial documentation, credit verification, and office administration. Passionate about continuous learning and eager to contribute to organizational success.</p>
+        <div class="hero-btns">
+          <a href="#contact" class="btn btn-primary"><i class="fas fa-paper-plane"></i> Hire Me</a>
+          <a href="#contact" class="btn btn-outline"><i class="fas fa-download"></i> Contact Me</a>
+        </div>
+        <div class="hero-stats">
+          <div class="stat-chip"><div class="num">7.78</div><div class="lbl">CGPA (M.Com)</div></div>
+          <div class="stat-chip"><div class="num">1</div><div class="lbl">Internship</div></div>
+          <div class="stat-chip"><div class="num">4</div><div class="lbl">Qualifications</div></div>
+          <div class="stat-chip"><div class="num">MS Office</div><div class="lbl">Proficient</div></div>
+        </div>
+      </div>
+      <div class="hero-avatar-wrap">
+        <div class="avatar-ring">
+          <img src="profile.jpeg" alt="Astha Singh" class="avatar-img" onerror="this.style.display='none'; document.getElementById('avatar-ph').style.display='flex';">
+          <div class="avatar-placeholder" id="avatar-ph" style="display:none;"><i class="fas fa-user"></i></div>
+          <div class="badge badge-1"><i class="fas fa-briefcase"></i> Commerce & Finance Professional</div>
+          <div class="badge badge-2"><i class="fas fa-graduation-cap"></i> M.Com • 7.78 CGPA</div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- About Section -->
+<section id="about">
+  <div class="container">
+    <span class="section-label reveal">Who I Am</span>
+    <h2 class="section-title reveal">About <span>Me</span></h2>
+    <div class="section-divider reveal"></div>
+    <div class="about-grid">
+      <div class="glass about-card reveal">
+        <div class="about-card-avatar-ph">🧑‍💻</div>
+        <h3>Astha Singh</h3>
+        <p>M.Com Graduate | Commerce & Finance Professional</p>
+        <div class="info-row"><i class="fas fa-map-marker-alt"></i> Dandupur, Christ Nagar, Chandmari</div>
+        <div class="info-row"><i class="fas fa-envelope"></i> rajputastha88@gmail.com</div>
+        <div class="info-row"><i class="fas fa-university"></i> JNM College for Advance and Technology</div>
+        <br>
+        <a href="#contact" class="btn btn-primary" style="width:100%;justify-content:center;">Hire Me</a>
+      </div>
+      <div class="about-text reveal">
+        <h3>Hello! I'm <span style="background:var(--grad);background-clip:text;-webkit-background-clip:text;-webkit-text-fill-color:transparent;">Astha Singh</span></h3>
+        <p>A motivated and detail-oriented commerce graduate with a Master's in Commerce (M.Com) from JNM College for Advance and Technology and a Bachelor's in Commerce (B.Com) from Swami Atulanand Hindu Mahavidyalaya. Currently seeking an opportunity where I can apply my academic knowledge, internship experience, and professional skills while contributing to organizational growth.</p>
+        <div class="edu-block">
+          <h4><i class="fas fa-graduation-cap" style="margin-right:.4rem;"></i>JNM College for Advance and Technology</h4>
+          <p>Master's in Commerce (M.Com)</p>
+          <p class="edu-gpa">Completed: March 2026 &nbsp;|&nbsp; CGPA: 7.78 / 10.0</p>
+          <h4><i class="fas fa-graduation-cap" style="margin-right:.4rem;"></i>Swami Atulanand Hindu Mahavidyalaya</h4>
+          <p>Bachelor's in Commerce (B.Com)</p>
+          <p class="edu-gpa">Completed: June 2024 &nbsp;|&nbsp; CGPA: 6.85 / 10.0</p>
+        </div>
+        <div class="edu-block">
+          <h4><i class="fas fa-book-open" style="margin-right:.4rem;"></i>Relevant Coursework</h4>
+          <p>Financial Accounting · Corporate Accounting · Cost Accounting · Business Economics · Income Tax · Auditing · Business Law · Financial Management</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- Skills Section -->
+<section id="skills">
+  <div class="container">
+    <span class="section-label reveal">What I Know</span>
+    <h2 class="section-title reveal">My <span>Skills</span></h2>
+    <div class="section-divider reveal"></div>
+    <div class="skills-tabs reveal">
+      <button class="tab-btn active" data-tab="tech">Technical</button>
+      <button class="tab-btn" data-tab="soft">Professional</button>
+    </div>
+    <div class="skills-grid" id="tab-tech">
+      <div class="skill-card glass reveal">
+        <div class="skill-icon" style="background:rgba(255,212,0,.1);color:#ffd400;"><i class="fas fa-file-word"></i></div>
+        <div class="skill-name">MS Word</div>
+        <div class="skill-bar-wrap"><div class="skill-bar-fill" data-w="95"></div></div>
+        <div class="skill-pct">95%</div>
+      </div>
+      <div class="skill-card glass reveal">
+        <div class="skill-icon" style="background:rgba(239,68,68,.1);color:#ef4444;"><i class="fas fa-file-excel"></i></div>
+        <div class="skill-name">MS Excel</div>
+        <div class="skill-bar-wrap"><div class="skill-bar-fill" data-w="90"></div></div>
+        <div class="skill-pct">90%</div>
+      </div>
+      <div class="skill-card glass reveal">
+        <div class="skill-icon" style="background:rgba(234,179,8,.1);color:#eab308;"><i class="fas fa-file-powerpoint"></i></div>
+        <div class="skill-name">PowerPoint</div>
+        <div class="skill-bar-wrap"><div class="skill-bar-fill" data-w="88"></div></div>
+        <div class="skill-pct">88%</div>
+      </div>
+      <div class="skill-card glass reveal">
+        <div class="skill-icon" style="background:rgba(249,115,22,.1);color:#f97316;"><i class="fas fa-globe"></i></div>
+        <div class="skill-name">Internet & Email</div>
+        <div class="skill-bar-wrap"><div class="skill-bar-fill" data-w="92"></div></div>
+        <div class="skill-pct">92%</div>
+      </div>
+      <div class="skill-card glass reveal">
+        <div class="skill-icon" style="background:rgba(6,182,212,.1);color:#06b6d4;"><i class="fas fa-calculator"></i></div>
+        <div class="skill-name">Financial Documentation</div>
+        <div class="skill-bar-wrap"><div class="skill-bar-fill" data-w="85"></div></div>
+        <div class="skill-pct">85%</div>
+      </div>
+      <div class="skill-card glass reveal">
+        <div class="skill-icon" style="background:rgba(79,142,247,.1);color:#4f8ef7;"><i class="fas fa-database"></i></div>
+        <div class="skill-name">MS Office Suite</div>
+        <div class="skill-bar-wrap"><div class="skill-bar-fill" data-w="93"></div></div>
+        <div class="skill-pct">93%</div>
+      </div>
+    </div>
+    <div class="skills-grid" id="tab-soft" style="display:none;">
+      <div class="skill-card glass reveal">
+        <div class="skill-icon" style="background:rgba(0,212,255,.1);color:var(--cyan);"><i class="fas fa-comment-dots"></i></div>
+        <div class="skill-name">Communication</div>
+        <div class="skill-bar-wrap"><div class="skill-bar-fill" data-w="92"></div></div>
+        <div class="skill-pct">92%</div>
+      </div>
+      <div class="skill-card glass reveal">
+        <div class="skill-icon" style="background:rgba(139,92,246,.1);color:#8b5cf6;"><i class="fas fa-users"></i></div>
+        <div class="skill-name">Teamwork</div>
+        <div class="skill-bar-wrap"><div class="skill-bar-fill" data-w="88"></div></div>
+        <div class="skill-pct">88%</div>
+      </div>
+      <div class="skill-card glass reveal">
+        <div class="skill-icon" style="background:rgba(34,197,94,.1);color:#22c55e;"><i class="fas fa-clock"></i></div>
+        <div class="skill-name">Time Management</div>
+        <div class="skill-bar-wrap"><div class="skill-bar-fill" data-w="90"></div></div>
+        <div class="skill-pct">90%</div>
+      </div>
+      <div class="skill-card glass reveal">
+        <div class="skill-icon" style="background:rgba(249,115,22,.1);color:#f97316;"><i class="fas fa-lightbulb"></i></div>
+        <div class="skill-name">Problem Solving</div>
+        <div class="skill-bar-wrap"><div class="skill-bar-fill" data-w="85"></div></div>
+        <div class="skill-pct">85%</div>
+      </div>
+      <div class="skill-card glass reveal">
+        <div class="skill-icon" style="background:rgba(79,142,247,.1);color:var(--blue);"><i class="fas fa-eye"></i></div>
+        <div class="skill-name">Attention to Detail</div>
+        <div class="skill-bar-wrap"><div class="skill-bar-fill" data-w="94"></div></div>
+        <div class="skill-pct">94%</div>
+      </div>
+      <div class="skill-card glass reveal">
+        <div class="skill-icon" style="background:rgba(255,212,0,.1);color:#ffd400;"><i class="fas fa-sync-alt"></i></div>
+        <div class="skill-name">Adaptability</div>
+        <div class="skill-bar-wrap"><div class="skill-bar-fill" data-w="87"></div></div>
+        <div class="skill-pct">87%</div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- Projects Section -->
+<section id="projects">
+  <div class="container">
+    <span class="section-label reveal">Academic & Projects</span>
+    <h2 class="section-title reveal">My <span>Projects</span></h2>
+    <div class="section-divider reveal"></div>
+    <div class="projects-grid">
+      <div class="project-card glass reveal">
+        <div class="project-thumb">
+          <img src="https://images.unsplash.com/photo-1554224155-6726b3ff858f?auto=format&fit=crop&w=700&q=80" alt="Financial Analysis" />
+          <div class="project-overlay"></div>
+          <span class="project-cat">Finance</span>
+        </div>
+        <div class="project-body">
+          <h3>Financial Statement Analysis</h3>
+          <p>Comparative analysis of financial statements of two leading companies using ratio analysis and trend analysis techniques.</p>
+          <div class="tags"><span class="tag">Excel</span><span class="tag">Ratio Analysis</span><span class="tag">Trend Analysis</span></div>
+          <a href="#" class="project-link">View Report <i class="fas fa-arrow-right"></i></a>
+        </div>
+      </div>
+      <div class="project-card glass reveal">
+        <div class="project-thumb">
+          <img src="https://images.unsplash.com/photo-1551288049-bebda4e38f71?auto=format&fit=crop&w=700&q=80" alt="Tax Planning" />
+          <div class="project-overlay"></div>
+          <span class="project-cat">Taxation</span>
+        </div>
+        <div class="project-body">
+          <h3>Tax Planning for Small Businesses</h3>
+          <p>Research project on tax saving strategies and compliance for small business owners under the Income Tax Act.</p>
+          <div class="tags"><span class="tag">Income Tax</span><span class="tag">Business Law</span><span class="tag">Research</span></div>
+          <a href="#" class="project-link">View Project <i class="fas fa-arrow-right"></i></a>
+        </div>
+      </div>
+      <div class="project-card glass reveal">
+        <div class="project-thumb">
+          <img src="https://images.unsplash.com/photo-1555949963-aa79dcee981c?auto=format&fit=crop&w=700&q=80" alt="Audit Report" />
+          <div class="project-overlay"></div>
+          <span class="project-cat">Auditing</span>
+        </div>
+        <div class="project-body">
+          <h3>Internal Audit Report Simulation</h3>
+          <p>Simulated internal audit of a manufacturing firm, identifying control weaknesses and recommending improvements.</p>
+          <div class="tags"><span class="tag">Auditing</span><span class="tag">Internal Control</span><span class="tag">Risk Assessment</span></div>
+          <a href="#" class="project-link">View Report <i class="fas fa-arrow-right"></i></a>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- Experience Section -->
+<section id="experience">
+  <div class="container">
+    <span class="section-label reveal">My Journey</span>
+    <h2 class="section-title reveal">Work <span>Experience</span></h2>
+    <div class="section-divider reveal"></div>
+    <div class="timeline">
+      <div class="tl-item reveal">
+        <div class="tl-dot"></div>
+        <div class="tl-card glass">
+          <h3>Credit Department Intern</h3>
+          <div class="tl-meta">
+            <span><i class="fas fa-building"></i> HDB Financial Services</span>
+            <span><i class="fas fa-map-marker-alt"></i> India</span>
+            <span><i class="fas fa-calendar"></i> Jun 2025 – Sep 2025</span>
+          </div>
+          <ul>
+            <li>Assisted in customer credit verification and documentation processing.</li>
+            <li>Maintained and organized financial records and loan files.</li>
+            <li>Supported loan processing activities and coordinated with senior officers for approval procedures.</li>
+            <li>Verified customer documents and ensured compliance with company policies.</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- Contact Section -->
+<section id="contact">
+  <div class="container">
+    <span class="section-label reveal">Get In Touch</span>
+    <h2 class="section-title reveal">Let's <span>Connect</span></h2>
+    <div class="section-divider reveal"></div>
+    <div class="contact-grid">
+      <div class="reveal">
+        <h3>Looking for a dedicated commerce graduate?</h3>
+        <p>I would be happy to discuss career opportunities, internships, or professional collaborations. Feel free to reach out anytime.</p>
+        <div class="c-item"><div class="c-icon"><i class="fas fa-envelope"></i></div><div><h4>Email</h4><p>rajputastha88@gmail.com</p></div></div>
+        <div class="c-item"><div class="c-icon"><i class="fas fa-map-marker-alt"></i></div><div><h4>Location</h4><p>Dandupur, Christ Nagar, Chandmari</p></div></div>
+        <div class="social-row">
+          <a href="#" class="social-btn"><i class="fab fa-linkedin-in"></i></a>
+          <a href="#" class="social-btn"><i class="fab fa-github"></i></a>
+          <a href="#" class="social-btn"><i class="fab fa-instagram"></i></a>
+          <a href="#" class="social-btn"><i class="fab fa-twitter"></i></a>
+        </div>
+      </div>
+      <div class="glass contact-form reveal">
+        <form id="contactForm">
+          <input type="hidden" name="to_email" value="rajputastha88@gmail.com" />
+          <input type="hidden" name="reply_to" id="reply_to_field" />
+          <div class="form-row">
+            <div class="form-group"><label for="name">Your Name</label><input type="text" id="name" name="from_name" class="form-control" placeholder="Your Name" required /></div>
+            <div class="form-group"><label for="email">Your Email</label><input type="email" id="email" name="from_email" class="form-control" placeholder="you@example.com" required /></div>
+          </div>
+          <div class="form-group"><label for="subject">Subject</label><input type="text" id="subject" name="subject" class="form-control" placeholder="Internship Opportunity" required /></div>
+          <div class="form-group"><label for="message">Message</label><textarea id="message" name="message" class="form-control" placeholder="Hi Astha, I'd like to connect regarding..." required></textarea></div>
+          <button type="submit" id="submitBtn" class="btn btn-primary form-submit"><i class="fas fa-paper-plane"></i> Send Message</button>
+        </form>
+      </div>
+    </div>
+  </div>
+</section>
+
+<footer>
+  <div class="container">
+    <div class="f-logo">Astha Singh</div>
+    <p>M.Com Graduate · Commerce Professional · Finance Enthusiast</p>
+    <p style="margin-top:.5rem;">&copy; 2026 Astha Singh · All rights reserved.</p>
+  </div>
+</footer>
+
+<button id="scrollTop" aria-label="Scroll to top"><i class="fas fa-arrow-up"></i></button>
+<div class="toast-container" id="toastContainer"></div>
+
+<div class="setup-banner" id="setup-banner" style="display:none;">
+  <div class="sb-icon"><i class="fas fa-info-circle"></i></div>
+  <div class="sb-text">
+    <strong>EmailJS setup required</strong>
+    <span>Add your EmailJS keys in script.js to enable the contact form.</span>
+  </div>
+  <div class="sb-actions">
+    <a href="https://www.emailjs.com/" target="_blank" rel="noopener" class="sb-btn">Get Keys</a>
+  </div>
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>

@@ -64,10 +64,10 @@
 (function(){
   const el = document.getElementById('typewriter');
   const phrases = [
-    'Computer Science Student',
-    'Software Developer',
-    'Problem Solver',
-    'Full-Stack Enthusiast',
+    'M.Com Graduate',
+    'Finance Professional',
+    'Commerce Professional',
+    'Finance Enthusiast',
   ];
   let pi=0, ci=0, deleting=false;
   function tick(){
